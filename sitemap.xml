@@ -36,6 +36,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://squidfunk.github.io/mkdocs-material/penyusun/</loc>
+     <lastmod>2019-05-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://squidfunk.github.io/mkdocs-material/dt/</loc>
      <lastmod>2019-05-20</lastmod>
      <changefreq>daily</changefreq>
@@ -56,17 +61,22 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://squidfunk.github.io/mkdocs-material/implementasi/</loc>
+     <loc>https://squidfunk.github.io/mkdocs-material/implementasidt/</loc>
      <lastmod>2019-05-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://squidfunk.github.io/mkdocs-material/kesimpulan/</loc>
+     <loc>https://squidfunk.github.io/mkdocs-material/kesimpulandt/</loc>
      <lastmod>2019-05-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://squidfunk.github.io/mkdocs-material/referensi/</loc>
+     <loc>https://squidfunk.github.io/mkdocs-material/referensidt/</loc>
+     <lastmod>2019-05-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://squidfunk.github.io/mkdocs-material/penyusun/</loc>
      <lastmod>2019-05-20</lastmod>
      <changefreq>daily</changefreq>
     </url>

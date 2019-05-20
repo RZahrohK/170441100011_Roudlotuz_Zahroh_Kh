@@ -42,7 +42,7 @@
     
     
       
-        <title>Implementasidt - Web Dokumentasi Seputar Datamining</title>
+        <title>Implementasi - Web Dokumentasi Seputar Datamining</title>
       
     
     
@@ -158,7 +158,7 @@
               Web Dokumentasi Seputar Datamining
             </span>
             <span class="md-header-nav__topic">
-              Implementasidt
+              Implementasi
             </span>
           
         </div>
@@ -225,7 +225,9 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
@@ -247,7 +249,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../dt/" title="Decision Tree" class="md-tabs__link">
+        <a href="../dt/" title="Decision Tree" class="md-tabs__link md-tabs__link--active">
           Decision Tree
         </a>
       
@@ -401,6 +403,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../penyusun/" title="Penyusun" class="md-nav__link">
+      Penyusun
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -410,10 +424,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Decision Tree
@@ -477,11 +493,79 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../implementasi/" title="Implementasi" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Implementasi
+      </label>
+    
+    <a href="./" title="Implementasi" class="md-nav__link md-nav__link--active">
       Implementasi
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#implementasi" title="Implementasi" class="md-nav__link">
+    Implementasi
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#package-requirement" title="Package Requirement" class="md-nav__link">
+    Package Requirement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-installation" title="Package Installation" class="md-nav__link">
+    Package Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coding" title="Coding" class="md-nav__link">
+    Coding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pembangunan-model-pengujian-dan-visualiasi-hasil" title="Pembangunan Model, Pengujian dan Visualiasi Hasil" class="md-nav__link">
+    Pembangunan Model, Pengujian dan Visualiasi Hasil
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -491,7 +575,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../kesimpulan/" title="Kesimpulan" class="md-nav__link">
+    <a href="../kesimpulandt/" title="Kesimpulan" class="md-nav__link">
       Kesimpulan
     </a>
   </li>
@@ -503,8 +587,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../referensi/" title="Referensi" class="md-nav__link">
+    <a href="../referensidt/" title="Referensi" class="md-nav__link">
       Referensi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../penyusun/" title="penyusun" class="md-nav__link">
+      penyusun
     </a>
   </li>
 
@@ -562,8 +658,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#visualiasi-hasil" title="Visualiasi Hasil" class="md-nav__link">
-    Visualiasi Hasil
+  <a href="#pembangunan-model-pengujian-dan-visualiasi-hasil" title="Pembangunan Model, Pengujian dan Visualiasi Hasil" class="md-nav__link">
+    Pembangunan Model, Pengujian dan Visualiasi Hasil
   </a>
   
 </li>
@@ -590,7 +686,7 @@
               
                 
                 
-                  <h1>Implementasidt</h1>
+                  <h1>Implementasi</h1>
                 
                 <h2 id="implementasi">Implementasi<a class="headerlink" href="#implementasi" title="Permanent link">&para;</a></h2>
 <h3 id="package-requirement">Package Requirement<a class="headerlink" href="#package-requirement" title="Permanent link">&para;</a></h3>
@@ -615,13 +711,14 @@
 <p>Setelah proses instalasi selesai kita bisa mengimport library-library tersebut dari python kita.</p>
 <p><pre class="codehilite"><code class="language-python">import numpy as np
 import matplotlib.pyplot as plt
+from sklearn import preprocessing
+from sklearn.tree import DecisionTreeClassifier # Import Decision Tree Classifier
+from sklearn import metrics #Import scikit-learn metrics module for accuracy calculation
 from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
 </code></pre>
 Selanjutnya kita dapat memasukkan data set berupa file csv</p>
 <p><pre class="codehilite"><code class="language-python">lokasi_file=input("Masukkan lokasi file data training : ")
-lokasi_file="Small Training Set.csv"
 data_train= pd.read_csv(lokasi_file)</code></pre>
 Data dalam dataset terbagi atas atribut fitur dan atribut target. Dalam dataset NSL-KDD atribut target adalah atribut'status' sedangkan fitur adalah atribut selain 'status'. Nantinya atribut fitur akan digunakan untuk memprediksi nilai dari atribut target. Untuk itu dalam source code kita harus disertakan kode untuk membagi data dalam dataset kedalam atribut fitur dan atribut target, serta kode untuk mengambil nama kolom atribut. </p>
 <p><pre class="codehilite"><code class="language-python">#Mengambil dataset dari atribut selain status sebagai data atribut fitur
@@ -631,36 +728,31 @@ x,y = data_train.loc[:,data_train.columns != 'status'], data_train.loc[:,'status
 col=data_train.columns.tolist()
 col.remove('status')
 </code></pre>
-Selanjutnya kita akan membangun KNN Classifier dengan N 1- masukan pengguna. Pada bagian ini juga dilakukan pre-processing data berupa encoding dengan metode one hot encoding seperti dijelaskan pada bagian metode penelitian. Variable x akan berisi data dari atribut fitur sedangkan y akan berisi data dari atribut target.
-<pre class="codehilite"><code class="language-python">#Membangun KNN Classifier dengan n mulai dari 1 hingga - n sesuai masukan pengguna
-n=input("Masukkan nilai N maksimal yang anda inginkan")
-knn = KNeighborsClassifier(n_neighbors = n)
-#Melakukan enccoding pada atribut yang berisi string.
+Selanjutnya dilakukan pre-processing data berupa encoding dengan metode one hot encoding seperti dijelaskan pada bagian metode penelitian. Variable x akan berisi data dari atribut fitur sedangkan y akan berisi data dari atribut target.
+<pre class="codehilite"><code class="language-python">#Melakukan enccoding pada atribut yang berisi string.
 x=pd.get_dummies(x, columns=col)
-y=pd.get_dummies(y, columns=['status'])
-</code></pre>
-Setelah pre-processing, tahap berikutnya adalah pengujian. Pada tahap ini 80% dataset akan digunakan sebagai data training dan 20% sebagai data uji. Nantinya akan dihitung berapa persen akurasinya untuk masing masing nilai K.
+y=pd.get_dummies(y, columns=['status'])</code></pre>
+Setelah pre-processing, tahap berikutnya adalah pengujian. Pada tahap ini 80% dataset akan digunakan sebagai data training dan 20% sebagai data uji. </p>
 <pre class="codehilite"><code class="language-python">
 # membangun traning set, dimana 80% utk training dan 20% utk testing
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size = 0.2)
-neig = np.arange(1,n)
-train_accuracy = []
-test_accuracy = []
-for i, k in enumerate (neig):
-    knn = KNeighborsClassifier(n_neighbors = k)
-    knn.fit(x_train,y_train)
-    train_accuracy.append(knn.score(x_train,y_train))
-    test_accuracy.append(knn.score(x_test,y_test))</code></pre></p>
-<h3 id="visualiasi-hasil">Visualiasi Hasil<a class="headerlink" href="#visualiasi-hasil" title="Permanent link">&para;</a></h3>
-<p>Dan pada akhirnya hasil pengujian tersebut ditampilkan dalam bentuk grafik agar mudah dimengerti
-<pre class="codehilite"><code class="language-python"># Plot
-plt.figure(figsize=(13,8))
-plt.plot(neig, test_accuracy, label = 'Akurasi IDS berbasis KNN')
-plt.legend()
-plt.title('AKURASI')
-plt.xlabel('Jumlah K')
-plt.ylabel('Akurasi')</code></pre></p>
-<p><center><a href="../assets/images/hasil.png"><img alt="Material for MkDocs" src="../assets/images/hasil.png" /></a></center></p>
+</code></pre>
+
+<h3 id="pembangunan-model-pengujian-dan-visualiasi-hasil">Pembangunan Model, Pengujian dan Visualiasi Hasil<a class="headerlink" href="#pembangunan-model-pengujian-dan-visualiasi-hasil" title="Permanent link">&para;</a></h3>
+<p>Dan pada akhirnya hasil pengujian tersebut ditampilkan dalam bentuk grafik agar  sebuah model Decision Tree akan dibangun di traning dan diuji dengan data yang telah disiapkan. Hasil akurasi akan ditampilkan untuk mengetahui efektifitas dari model. Tampak bahwa model ini mampu mendeteksi 94% serangan dengan tepat</p>
+<pre class="codehilite"><code class="language-python">
+# Membangun desision tree classifier
+clf = DecisionTreeClassifier()
+
+# Melakukan traning
+clf = clf.fit(x_train,y_train)
+
+#Melakukan pengujian dan menampilkan akurasi
+y_pred = clf.predict(x_test)
+print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
+</code></pre>
+
+<p><center><a href="../assets/images/hasildt.png"><img alt="Material for MkDocs" src="../assets/images/hasildt.png" /></a></center></p>
                 
                   
                 
@@ -677,6 +769,41 @@ plt.ylabel('Akurasi')</code></pre></p>
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../metpen/" title="Metode Penelitian" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Metode Penelitian
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../kesimpulandt/" title="Kesimpulan" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Kesimpulan
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
